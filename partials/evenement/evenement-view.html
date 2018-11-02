@@ -1,0 +1,42 @@
+ <section id="event" class="bg-light-gray">
+     <br>
+            <br>
+            <br>
+            <br>
+     <br>
+            <br>
+            <br>
+            <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Details for {{evenement.title}}</h2>
+                    
+                </div>
+            </div>
+            <div class="row">
+                
+                    <div class="team-member text-center" >
+                       <center><img src="images/even1.jpg" class="img-responsive" alt=""></center> 
+                        <h4> evenement lieu : {{evenement.lieu}}</h4>
+                        <h4> evenement prix : {{evenement.title}}</h4>
+                        <h4> evenement prix : {{evenement.price}}</h4>
+                        <h4> evenement prix : {{evenement.description}}</h4>
+
+
+                </div>
+                </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">{{evenement.description}}</p>
+                </div>
+            </div>
+        </div>
+     <center><div><iframe
+                  width="600"
+                  height="450"
+                  frameborder="0" style="border:0"
+                ng-src="{{mapsUrl}}"
+                  allowfullscreen>
+                </iframe></div></center>
+    </section>

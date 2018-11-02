@@ -1,0 +1,35 @@
+
+<section id="gamer">
+    <div class="container">
+        <br>
+            <br>
+            <br>
+            <br>
+        <div class="row">
+            <div class="col-sm-12 col-md-9">
+					<div id="event-carousel" class="carousel slide" data-interval="false">
+						<h2 class="heading">All Gamers</h2>
+						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-4"ng-repeat="gamer in gamers">
+                                       
+										<div class="single-event" >
+                                          
+											<img class="img-responsive img-circle" src="images/asma.jpg" alt="event-image">
+                                            <h4>{{gamer.description}}</h4>
+                                                 <a class="btn btn-primary" ui-sref="viewGamer({id:gamer.id})">View</a>
+                                         
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				
+                    </div>	
+    </div>
+</section>   

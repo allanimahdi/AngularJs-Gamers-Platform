@@ -1,0 +1,36 @@
+
+<section id="tournament">
+		<div class="container">
+			<br>
+            <br>
+            <br>
+            <br>
+			<div class="row">
+				<div class="col-sm-12 col-md-9">
+					<div id="event-carousel" class="carousel slide" data-interval="false">
+						<h2 class="heading">All Tournaments</h2>
+						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-4" ng-repeat="tournament in tournaments">
+										<div class="single-event">
+											<img class="img-responsive" src="images/even1.jpg" alt="event-image">
+											<h4>{{tournament.title}}</h4>
+											<a class="btn btn-primary" ui-sref="viewTournament({id:tournament.id})">View</a>
+										</div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+                <br>
+                <br>
+                <br>
+				
+			</div>			
+		</div>
+	</section>
